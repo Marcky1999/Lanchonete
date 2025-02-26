@@ -6,7 +6,7 @@
 body {
 
     /** Muda a cor do fundo da página **/
-    background-color: #ffe18c;
+    background-color: brown;
 
     /** Muda a fonte do corpo da página e de todos os elementos
     em seu interior para Candara, Helvetica (se Candara não
@@ -118,7 +118,7 @@ que representa o logo do site**/
     float: left;
 
     /** Muda a cor do texto do logo **/
-    color: #e50021;
+    color: #fff;
 
     /** Por padrão, usamos o elemento vertical-align: middle
     para deixar elementos centralizados verticalmente. No entanto
@@ -282,6 +282,8 @@ normal e já visitados **/
     /** Deixa a fonte em negrito **/
     font-weight: bold;
 }
+ 
+
 
 /** Selecionamos a div principal, que irá armazenar todo o conteúdo
 principal do site **/
@@ -308,7 +310,8 @@ principal do site **/
     height: 200px;
 
     /** Configura uma imagem de fundo da promoção **/
-    background-image: url('images/promocao.jpg');
+    background-image: url('images/hamburguer-com-batata.png');
+    background-size: 700px 260px;
 }
 
 /** Seleciona o header principal da promoção (id "promocaoH1") **/
@@ -345,7 +348,7 @@ principal do site **/
     color: white;
 
     /** Define um tamanho de fonte de 64px; **/
-    font-size: 48px;
+    font-size: 40px;
 
     /** Remove a margem padrão dos elementos H **/
     margin: 0;
@@ -359,7 +362,7 @@ principal do site **/
     text-shadow: 2px 2px 4px #e50021;
 
     /** Posiciona o elemento no canto inferior direito **/
-    left: 180px;
+    left: 150px;
     top: 130px;
 
     /** Restringe o tamanho padrão do H **/
@@ -426,8 +429,13 @@ principal do site **/
     espessura da borda, o segundo é o tipo da borda (solida, pontilhada, etc)
     e o terceiro, sua cor **/
     border: 2px solid #e50021;
+
+    transition: transform 0.3s ease-in-out;
 }
 
+#areaProdutos td img:hover{
+    transform: scale(1.2);
+}
 /** Seleciona elementos anotados com a classe "tituloProduto" **/
 .tituloProduto {
     
@@ -471,6 +479,8 @@ principal do site **/
 
     /** Define uma borda para o elemento **/
     border: 3px solid #e50021;
+
+    height: 90px;
 }
 
 /** Seleciona elementos com id "tel" **/
@@ -481,7 +491,7 @@ principal do site **/
     position: absolute;
 
     /** Configura uma posição horizontal  para o item **/
-    left: 120px;
+    left: 105px;
 
     /** Define uma altura para o item **/
     height: 75px;
@@ -496,7 +506,7 @@ principal do site **/
     margin-top: 13px;
 
     /** Adiciona borda interna ao elemento no tamanho de 10px **/
-    padding: 10px;
+    padding: 12px;
 
     /** Remove a borda interna da parte inferior  **/
     padding-bottom: 0;
