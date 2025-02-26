@@ -105,6 +105,11 @@ que representa o logo do site**/
     outro. Estamos aplicando a fluação na imagem e no texto do
     logo, de forma que fiquem um ao lado do outro **/
     float: left;
+
+    transition: transform 0.3s ease-in-out;
+}
+#logoImg:hover{
+    transform: scale(1.1);
 }
 
 #tituloLogo {
@@ -139,6 +144,10 @@ que representa o logo do site**/
 
     /** Define o tamanho da fonte para 50px **/
     font-size: 45px;
+    transition: transform 0.3s ease-out;
+}
+#tituloLogo:hover{
+    transform: scale(1.1);
 }
 
 /** Seleciona a div principal que irá compor o menu da aplicação

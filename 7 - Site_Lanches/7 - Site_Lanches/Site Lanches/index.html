@@ -3,6 +3,16 @@
     <meta charset="UTF-8">    
     <title>André Lanches</title>
     <link href="estilo.css" type="text/css" rel="stylesheet">
+    <script>
+        function loadPage(page) {
+            fetch(page)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('content').innerHTML = data;
+                })
+                .catch(error => console.error('Erro ao carregar a página:', error));
+        }
+    </script>
 </head>
 <body>
     <div id="header">
@@ -12,9 +22,9 @@
         </div>
         <div id="menu">
             <ul class="listaMenu">
-                <li><a href="./sobre.html">Sobre Nós</a></li>
+                <li><a href="#" onclick="loadPage('sobre.html')">Sobre Nós</a></li>
                 <li><a id="menuAtual" href="index.html">Lanches</a></li>
-                <li><a href="contato.html">Contato</a></li>
+                <li><a href="#" onclick="loadPage('contato.html')">Contato</a></li>
             </ul>
         </div>
     </div>
